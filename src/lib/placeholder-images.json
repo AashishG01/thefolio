@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "Portrait of a developer",
+      "imageUrl": "https://images.unsplash.com/photo-1689218742390-78100d0eca33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzNjI5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "developer portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "Screenshot of an e-commerce website",
+      "imageUrl": "https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3ZWJzaXRlJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2MTMzNjg4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "website ecommerce"
+    },
+    {
+      "id": "project-2",
+      "description": "Screenshot of a task management application",
+      "imageUrl": "https://images.unsplash.com/photo-1732194516739-9325055c35de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXNoYm9hcmQlMjBhcHB8ZW58MHx8fHwxNzYxMzA4NzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard app"
+    },
+    {
+      "id": "project-3",
+      "description": "Screenshot of a portfolio website",
+      "imageUrl": "https://images.unsplash.com/photo-1746397545445-f6086889ccc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0Zm9saW8lMjBkZXNpZ258ZW58MHx8fHwxNzYxMzk1ODQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portfolio design"
+    },
+    {
+      "id": "project-4",
+      "description": "Screenshot of a blogging platform",
+      "imageUrl": "https://images.unsplash.com/photo-1649442746245-f51f4b76963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9nJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2MTM5NTg0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blog interface"
+    }
+  ]
 }
