@@ -6,6 +6,7 @@ export const navLinks: NavLink[] = [
   { name: 'Home', hash: '#home' },
   { name: 'Projects', hash: '#projects' },
   { name: 'Experience', hash: '#experience' },
+  { name: 'Skills', hash: '#skills' },
   { name: 'Contact', hash: '#contact' },
 ];
 
@@ -92,4 +93,10 @@ export const skillsData: string[] = [
   'Git',
   'Docker',
   'AWS',
+  'AI',
+  'Machine Learning',
+  'Data Analytics',
+  'Python',
+  'TensorFlow',
+  'PyTorch',
 ];

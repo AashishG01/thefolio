@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
+import React from 'react';
+import { useForm, type SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { submitContactForm, type ContactFormState } from '@/lib/actions';
@@ -30,9 +30,14 @@ export default function ContactSection() {
     defaultValues: { name: '', email: '', message: '' },
   });
 
-  const { formState: { isSubmitting } } = form;
+  const { formState: { isSubmitting }, handleSubmit } = form;
 
-  const handleSubmit = async (formData: FormData) => {
+  const processForm: SubmitHandler<ContactFormValues> = async (data) => {
+    const formData = new FormData();
+    Object.entries(data).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+
     const result = await submitContactForm(
       { message: '', status: 'idle' },
       formData
@@ -62,7 +67,7 @@ export default function ContactSection() {
         </p>
 
         <Form {...form}>
-          <form action={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit(processForm)} className="space-y-6">
             <FormField
               control={form.control}
               name="name"
