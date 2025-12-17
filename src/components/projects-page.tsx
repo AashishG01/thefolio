@@ -4,6 +4,7 @@ import { projectsData } from '@/lib/data';
 import ProjectCard from './project-card';
 import SectionHeading from './section-heading';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
+import { cn } from '@/lib/utils';
 
 export default function ProjectsPage() {
     const categories = Array.from(new Set(projectsData.map(p => p.category)));
@@ -14,7 +15,7 @@ export default function ProjectsPage() {
       <div className="container mx-auto">
         <SectionHeading>My Projects</SectionHeading>
         <Tabs defaultValue="All" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-8">
+          <TabsList className={cn("grid w-full max-w-md mx-auto mb-8", `grid-cols-${categories.length}`)}>
             {categories.map(category => (
                 <TabsTrigger key={category} value={category}>{category}</TabsTrigger>
             ))}
