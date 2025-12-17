@@ -8,9 +8,9 @@
     },
     {
       "id": "project-1",
-      "description": "Screenshot of an AI healthcare platform",
-      "imageUrl": "https://images.unsplash.com/photo-1620336234394-135354963574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTM5NTg0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "healthcare dashboard"
+      "description": "Logo for Synapse Medicare",
+      "imageUrl": "https://storage.googleapis.com/prompt-images/2a2e4630-f38b-4b1f-a36c-2f9242d5e7a9.png",
+      "imageHint": "medicare logo"
     },
     {
       "id": "project-2",
