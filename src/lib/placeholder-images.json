@@ -9,7 +9,7 @@
     {
       "id": "project-1",
       "description": "Logo for Synapse Medicare",
-      "imageUrl": "https://picsum.photos/seed/synapse/400/224",
+      "imageUrl": "https://storage.googleapis.com/prompt-images/2a2e4630-f38b-4b1f-a36c-2f9242d5e7a9.png",
       "imageHint": "medicare logo"
     },
     {
@@ -21,13 +21,13 @@
     {
       "id": "project-3",
       "description": "Screenshot of a plant disease detection app",
-      "imageUrl": "https://images.unsplash.com/photo-1602332659518-1e068472e7ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwbGFudCUyMGRpc2Vhc2V8ZW58MHx8fHwxNzY1ODgwNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://storage.googleapis.com/prompt-images/a6d35467-333e-4623-a55e-836f1c48e77a.png",
       "imageHint": "plant disease"
     },
     {
       "id": "project-4",
       "description": "Screenshot of a background removal tool",
-      "imageUrl": "https://images.unsplash.com/photo-1759674863761-1141dace47fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiYWNrZ3JvdW5kJTIwcmVtb3ZhbHxlbnwwfHx8fDE3NjU5ODQyNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://storage.googleapis.com/prompt-images/2a733190-3b95-430c-8d14-386f7b11d139.png",
       "imageHint": "background removal"
     }
   ]
