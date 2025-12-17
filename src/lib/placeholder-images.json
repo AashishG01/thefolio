@@ -9,25 +9,25 @@
     {
       "id": "project-1",
       "description": "Logo for Synapse Medicare",
-      "imageUrl": "https://storage.googleapis.com/prompt-images/2a2e4630-f38b-4b1f-a36c-2f9242d5e7a9.png",
+      "imageUrl": "https://picsum.photos/seed/synapse/400/224",
       "imageHint": "medicare logo"
     },
     {
       "id": "project-2",
       "description": "Screenshot of a movie recommendation app",
-      "imageUrl": "https://images.unsplash.com/photo-1620146931986-27a819b910e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3ZpZSUyMHJlY29tbWVuZGF0aW9ufGVufDB8fHx8MTc2MTM5NTg0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1619164669943-536b56d813a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3ZpZSUyMHJlY29tbWVuZGF0aW9ufGVufDB8fHx8MTc2NTk4NDI0NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "movie recommendation"
     },
     {
       "id": "project-3",
       "description": "Screenshot of a plant disease detection app",
-      "imageUrl": "https://images.unsplash.com/photo-1627589083313-a449c2d11e53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHBsYW50JTIwZGlzZWFzZXxlbnwwfHx8fDE3NjEzOTU4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1602332659518-1e068472e7ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwbGFudCUyMGRpc2Vhc2V8ZW58MHx8fHwxNzY1ODgwNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "plant disease"
     },
     {
       "id": "project-4",
       "description": "Screenshot of a background removal tool",
-      "imageUrl": "https://storage.googleapis.com/prompt-images/2a733190-3b95-430c-8d14-386f7b11d139.png",
+      "imageUrl": "https://images.unsplash.com/photo-1759674863761-1141dace47fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiYWNrZ3JvdW5kJTIwcmVtb3ZhbHxlbnwwfHx8fDE3NjU5ODQyNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "background removal"
     }
   ]
