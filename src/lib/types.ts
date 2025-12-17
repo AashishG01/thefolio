@@ -18,6 +18,7 @@ export type Project = {
   imageUrl: string;
   sourceUrl: string;
   liveUrl: string;
+  category: string;
 };
 
 export type Experience = {

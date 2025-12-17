@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { Menu, X, Code } from 'lucide-react';
@@ -11,6 +12,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('Home');
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,17 +20,26 @@ export default function Header() {
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); 
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
+    if (pathname !== '/') {
+      setActiveSection('');
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const navLink = navLinks.find(link => `#${entry.target.id}` === link.hash);
+            const navLink = navLinks.find(
+              (link) => `#${entry.target.id}` === link.hash
+            );
             if (navLink) {
-                setActiveSection(navLink.name);
+              setActiveSection(navLink.name);
             }
           }
         });
@@ -36,17 +47,34 @@ export default function Header() {
       { rootMargin: '-30% 0px -70% 0px' }
     );
 
-    document.querySelectorAll('section').forEach((section) => {
+    document.querySelectorAll('section[id]').forEach((section) => {
       observer.observe(section);
     });
-    
+
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (pathname.startsWith('/projects')) {
+      setActiveSection('Projects');
+    } else if (pathname === '/') {
+      // The intersection observer will handle setting the active section
+    } else {
+      const currentLink = navLinks.find((link) => link.hash === pathname);
+      if (currentLink) {
+        setActiveSection(currentLink.name);
+      }
+    }
+  }, [pathname]);
   
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
-    if (hash.startsWith('#')) {
+    if (hash.startsWith('#') && pathname === '/') {
       e.preventDefault();
       document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' });
+      const navLink = navLinks.find(link => link.hash === hash);
+      if (navLink) setActiveSection(navLink.name);
+      setIsOpen(false);
+    } else {
       const navLink = navLinks.find(link => link.hash === hash);
       if (navLink) setActiveSection(navLink.name);
       setIsOpen(false);
@@ -56,10 +84,10 @@ export default function Header() {
   return (
     <header className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        scrolled ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent"
+        scrolled || pathname !== '/' ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent"
     )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href="#home" onClick={(e) => handleNavClick(e, "#home")} className="flex items-center gap-2 font-headline text-2xl font-bold">
+        <Link href="/" onClick={(e) => handleNavClick(e, '/')} className="flex items-center gap-2 font-headline text-2xl font-bold">
           <Code className="h-8 w-8 text-primary" />
           <span>Aashish Gupta</span>
         </Link>

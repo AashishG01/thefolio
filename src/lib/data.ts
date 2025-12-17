@@ -3,8 +3,8 @@ import type { Project, Experience, NavLink, SocialLink } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
 export const navLinks: NavLink[] = [
-  { name: 'Home', hash: '#home' },
-  { name: 'Projects', hash: '#projects' },
+  { name: 'Home', hash: '/' },
+  { name: 'Projects', hash: '/projects' },
   { name: 'Experience', hash: '#experience' },
   { name: 'Skills', hash: '#skills' },
   { name: 'Contact', hash: '#contact' },
@@ -23,6 +23,7 @@ export const projectsData: Project[] = [
     imageUrl: PlaceHolderImages.find(img => img.id === 'project-1')?.imageUrl || '',
     sourceUrl: 'https://github.com/aashish-g-21/Synapse-Medicare-v2.0',
     liveUrl: '#',
+    category: 'Data Science & AI',
   },
   {
     title: 'CineSuggest — Full-Stack MERN Movie App',
@@ -31,6 +32,7 @@ export const projectsData: Project[] = [
     imageUrl: PlaceHolderImages.find(img => img.id === 'project-2')?.imageUrl || '',
     sourceUrl: 'https://github.com/aashish-g-21/CineSuggest_MERN',
     liveUrl: '#',
+    category: 'Software & Web Development',
   },
   {
     title: 'Plant Disease Detection Using Deep Learning',
@@ -39,6 +41,7 @@ export const projectsData: Project[] = [
     imageUrl: PlaceHolderImages.find(img => img.id === 'project-3')?.imageUrl || '',
     sourceUrl: 'https://github.com/aashish-g-21/Plant-Disease-Detection-and-Segmentation',
     liveUrl: '#',
+    category: 'Data Science & AI',
   },
   {
     title: 'Background Removal using U-Net',
@@ -47,6 +50,7 @@ export const projectsData: Project[] = [
     imageUrl: PlaceHolderImages.find(img => img.id === 'project-4')?.imageUrl || '',
     sourceUrl: 'https://github.com/aashish-g-21/Background-Removal-using-UNet-in-PyTorch',
     liveUrl: '#',
+    category: 'Data Science & AI',
   },
 ];
 
