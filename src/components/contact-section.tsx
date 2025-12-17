@@ -12,7 +12,6 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from './ui/form';
-import { Send } from 'lucide-react';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -37,7 +36,7 @@ export default function ContactSection() {
 
     if (result.status === 'success') {
       toast({
-        title: 'Success!',
+        title: 'Message Sent!',
         description: result.message,
       });
       form.reset();
@@ -51,7 +50,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="w-full py-24 sm:py-32">
+    <section id="contact" className="w-full py-24 sm:py-32 bg-secondary/50">
       <div className="container mx-auto max-w-2xl">
         <SectionHeading>Contact Me</SectionHeading>
         <p className="text-center text-muted-foreground mb-8 -mt-4">
@@ -100,8 +99,8 @@ export default function ContactSection() {
               )}
             />
             <div className="text-center">
-              <Button type="submit" size="lg" disabled={isSubmitting}>
-                Send Message <Send className="ml-2 h-4 w-4" />
+              <Button type="submit" size="lg" disabled={isSubmitting} className="bg-accent text-accent-foreground hover:bg-accent/90">
+                Send Message
               </Button>
             </div>
           </form>

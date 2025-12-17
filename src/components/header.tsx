@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
-import { Menu, X, Code } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
 
 export default function Header() {
@@ -84,11 +84,10 @@ export default function Header() {
   return (
     <header className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        scrolled || pathname !== '/' ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent"
+        scrolled ? "border-b bg-background/80 backdrop-blur-sm" : "bg-transparent"
     )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href="/" onClick={(e) => handleNavClick(e, '/')} className="flex items-center gap-2 font-headline text-2xl font-bold">
-          <Code className="h-8 w-8 text-primary" />
+        <Link href="/" onClick={(e) => handleNavClick(e, '/')} className="flex items-center gap-2 font-headline text-2xl font-bold text-primary">
           <span>Aashish Gupta</span>
         </Link>
         
@@ -100,8 +99,8 @@ export default function Header() {
                   href={link.hash}
                   onClick={(e) => handleNavClick(e, link.hash)}
                   className={cn(
-                    'relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300 hover:text-primary',
-                    activeSection === link.name ? 'text-primary' : 'text-foreground/70'
+                    'relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300 hover:text-accent',
+                    activeSection === link.name ? 'text-accent font-semibold' : 'text-foreground/70'
                   )}
                 >
                   {link.name}
@@ -135,7 +134,7 @@ export default function Header() {
                 onClick={(e) => handleNavClick(e, link.hash)}
                 className={cn(
                   'text-lg font-medium',
-                  activeSection === link.name ? 'text-primary' : 'text-foreground/70'
+                  activeSection === link.name ? 'text-accent' : 'text-foreground/70'
                 )}
               >
                 {link.name}

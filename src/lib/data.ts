@@ -1,11 +1,10 @@
-import { Github, Linkedin, Briefcase, GraduationCap } from 'lucide-react';
-import type { Project, Experience, NavLink, SocialLink } from './types';
+import type { Project, NavLink, SocialLink, Skill } from './types';
 import { PlaceHolderImages } from './placeholder-images';
+import { Github, Linkedin } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
   { name: 'Home', hash: '/' },
   { name: 'Projects', hash: '/projects' },
-  { name: 'Experience', hash: '#experience' },
   { name: 'Skills', hash: '#skills' },
   { name: 'Contact', hash: '#contact' },
 ];
@@ -54,59 +53,15 @@ export const projectsData: Project[] = [
   },
 ];
 
-export const experienceData: Experience[] = [
-    {
-    title: 'Freelancer & Open Source Contributor',
-    company: 'Remote',
-    description: 'Actively seeking freelance opportunities and contributing to open-source projects. Focused on developing full-stack applications and exploring AI/ML solutions.',
-    date: '2024 - Present',
-    icon: Briefcase,
-  },
-  {
-    title: 'Robotics Software Developer, Robocon 2024',
-    company: 'Drishti, NIT Surat',
-    description: 'Developed autonomous robot using YOLO, OpenCV, and sensor fusion on Jetson Nano. Built a semi-autonomous holonomic robot controlled via PS4, Arduino, and ESP32. Ranked 13th nationally.',
-    date: 'Nov 2023 – Jul 2024',
-    icon: Briefcase,
-  },
-  {
-    title: 'B.Tech in Electronics and Communication',
-    company: 'SVNIT, Surat',
-    description: 'CGPA: 6.92. Gained a strong foundation in electronics, communication systems, and computer science principles.',
-    date: '2022 - Present',
-    icon: GraduationCap,
-  },
-    {
-    title: 'Senior Secondary (Class XII)',
-    company: 'Modi School, Rajkot',
-    description: 'Percentage: 94.2%',
-    date: '2022',
-    icon: GraduationCap,
-  },
-];
 
-export const skillsData: string[] = [
-  'JavaScript',
-  'TypeScript',
-  'Python',
-  'React',
-  'Next.js',
-  'Node.js',
-  'Express',
-  'MongoDB',
-  'PostgreSQL',
-  'FastAPI',
-  'PyTorch',
-  'TensorFlow',
-  'LangChain',
-  'OpenCV',
-  'Git',
-  'Docker',
-  'Tailwind CSS',
-  'Redux',
-  'AI',
-  'Machine Learning',
-  'Data Analytics',
-  'Deep Learning',
-  'Computer Vision',
+export const skillsData: Skill[] = [
+  { name: 'TypeScript', use: 'Used in all modern full-stack projects for type safety.', proofUrl: 'https://github.com/aashish-g-21' },
+  { name: 'React & Next.js', use: 'Primary tools for building responsive frontends.', proofUrl: 'https://github.com/aashish-g-21/CineSuggest_MERN' },
+  { name: 'Node.js & Express', use: 'Built robust REST APIs for backend services.', proofUrl: 'https://github.com/aashish-g-21/CineSuggest_MERN' },
+  { name: 'Python & FastAPI', use: 'Developed high-performance microservices for AI models.', proofUrl: 'https://github.com/aashish-g-21/CineSuggest_MERN' },
+  { name: 'PyTorch', use: 'Implemented computer vision models for detection and segmentation.', proofUrl: 'https://github.com/aashish-g-21/Plant-Disease-Detection-and-Segmentation' },
+  { name: 'MongoDB & PostgreSQL', use: 'Managed data storage for various applications.', proofUrl: 'https://github.com/aashish-g-21' },
+  { name: 'Docker', use: 'Containerized applications for consistent deployment.', proofUrl: 'https://github.com/aashish-g-21' },
+  { name: 'LangChain', use: 'Built AI-driven assistance and consultation features.', proofUrl: 'https://github.com/aashish-g-21/Synapse-Medicare-v2.0' },
+  { name: 'Git & GitHub', use: 'Version control and collaboration on all projects.', proofUrl: 'https://github.com/aashish-g-21' },
 ];

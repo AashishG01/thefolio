@@ -21,6 +21,12 @@ export type Project = {
   category: string;
 };
 
+export type Skill = {
+  name: string;
+  use: string;
+  proofUrl: string;
+};
+
 export type Experience = {
   title: string;
   company: string;
