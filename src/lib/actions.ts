@@ -8,27 +8,22 @@ const contactFormSchema = z.object({
   message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
 });
 
+export type ContactFormValues = z.infer<typeof contactFormSchema>;
+
 export type ContactFormState = {
   message: string;
   status: 'success' | 'error';
-} | {
-  message: string;
-  status: 'idle';
 }
 
 export async function submitContactForm(
-  prevState: ContactFormState,
-  formData: FormData
+  data: ContactFormValues
 ): Promise<ContactFormState> {
-  const validatedFields = contactFormSchema.safeParse({
-    name: formData.get('name'),
-    email: formData.get('email'),
-    message: formData.get('message'),
-  });
+  const validatedFields = contactFormSchema.safeParse(data);
 
   if (!validatedFields.success) {
+    const firstError = Object.values(validatedFields.error.flatten().fieldErrors)[0]?.[0];
     return {
-      message: validatedFields.error.flatten().fieldErrors[Object.keys(validatedFields.error.flatten().fieldErrors)[0] as string][0] as string,
+      message: firstError || 'Invalid input.',
       status: 'error',
     };
   }

@@ -4,7 +4,7 @@ import React from 'react';
 import { useForm, type SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { submitContactForm, type ContactFormState } from '@/lib/actions';
+import { submitContactForm } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
 
 import SectionHeading from './section-heading';
@@ -33,15 +33,7 @@ export default function ContactSection() {
   const { formState: { isSubmitting }, handleSubmit } = form;
 
   const processForm: SubmitHandler<ContactFormValues> = async (data) => {
-    const formData = new FormData();
-    Object.entries(data).forEach(([key, value]) => {
-      formData.append(key, value);
-    });
-
-    const result = await submitContactForm(
-      { message: '', status: 'idle' },
-      formData
-    );
+    const result = await submitContactForm(data);
 
     if (result.status === 'success') {
       toast({
@@ -63,7 +55,7 @@ export default function ContactSection() {
       <div className="container mx-auto max-w-2xl">
         <SectionHeading>Contact Me</SectionHeading>
         <p className="text-center text-muted-foreground mb-8 -mt-4">
-          Have a question or want to work together? Leave your details below.
+          Have a question or want to work together? My inbox is always open.
         </p>
 
         <Form {...form}>

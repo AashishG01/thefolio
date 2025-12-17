@@ -8,12 +8,12 @@ export default function Footer() {
     <footer className="w-full border-t border-border/50 bg-background">
       <div className="container mx-auto py-6 text-center text-sm text-muted-foreground">
         <p>
-          &copy; {currentYear} MERN Folio. All rights reserved.
+          &copy; {currentYear} Aashish Gupta. All rights reserved.
         </p>
         <p>
           Built by{' '}
-          <Link href="https://github.com" target="_blank" className="font-medium text-primary hover:underline underline-offset-4">
-            Your Name
+          <Link href="https://github.com/aashish-g-21" target="_blank" className="font-medium text-primary hover:underline underline-offset-4">
+            Aashish Gupta
           </Link>
         </p>
       </div>

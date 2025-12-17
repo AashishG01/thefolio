@@ -3,32 +3,32 @@
     {
       "id": "hero-image",
       "description": "Portrait of a developer",
-      "imageUrl": "https://images.unsplash.com/photo-1689218742390-78100d0eca33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzNjI5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1550439062-609e1531270e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXJ8ZW58MHx8fHwxNzYxMzA4NzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "developer portrait"
     },
     {
       "id": "project-1",
-      "description": "Screenshot of an e-commerce website",
-      "imageUrl": "https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3ZWJzaXRlJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2MTMzNjg4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "website ecommerce"
+      "description": "Screenshot of an AI healthcare platform",
+      "imageUrl": "https://images.unsplash.com/photo-1620336234394-135354963574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTM5NTg0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "healthcare dashboard"
     },
     {
       "id": "project-2",
-      "description": "Screenshot of a task management application",
-      "imageUrl": "https://images.unsplash.com/photo-1732194516739-9325055c35de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXNoYm9hcmQlMjBhcHB8ZW58MHx8fHwxNzYxMzA4NzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dashboard app"
+      "description": "Screenshot of a movie recommendation app",
+      "imageUrl": "https://images.unsplash.com/photo-1620146931986-27a819b910e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3ZpZSUyMHJlY29tbWVuZGF0aW9ufGVufDB8fHx8MTc2MTM5NTg0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "movie recommendation"
     },
     {
       "id": "project-3",
-      "description": "Screenshot of a portfolio website",
-      "imageUrl": "https://images.unsplash.com/photo-1746397545445-f6086889ccc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0Zm9saW8lMjBkZXNpZ258ZW58MHx8fHwxNzYxMzk1ODQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "portfolio design"
+      "description": "Screenshot of a plant disease detection app",
+      "imageUrl": "https://images.unsplash.com/photo-1627589083313-a449c2d11e53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHBsYW50JTIwZGlzZWFzZXxlbnwwfHx8fDE3NjEzOTU4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plant disease"
     },
     {
       "id": "project-4",
-      "description": "Screenshot of a blogging platform",
-      "imageUrl": "https://images.unsplash.com/photo-1649442746245-f51f4b76963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9nJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2MTM5NTg0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "blog interface"
+      "description": "Screenshot of a background removal tool",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWNrZ3JvdW5kJTIwcmVtb3ZhbHxlbnwwfHx8fDE3NjEzOTU4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "background removal"
     }
   ]
 }

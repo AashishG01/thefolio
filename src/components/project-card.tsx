@@ -14,9 +14,9 @@ export default function ProjectCard({ title, description, tags, imageUrl, source
         <Image
           src={imageUrl}
           alt={title}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
-          data-ai-hint="website screenshot"
+          width={400}
+          height={224}
+          className="object-cover group-hover:scale-105 transition-transform duration-500 w-full h-full"
         />
         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
       </div>
@@ -34,16 +34,20 @@ export default function ProjectCard({ title, description, tags, imageUrl, source
         </div>
       </CardContent>
       <CardFooter className="flex justify-end gap-2">
-        <Link href={sourceUrl} target="_blank" rel="noopener noreferrer">
-          <Button variant="ghost" size="sm">
-            <Github className="mr-2 h-4 w-4" /> Source
-          </Button>
-        </Link>
-        <Link href={liveUrl} target="_blank" rel="noopener noreferrer">
-          <Button variant="default" size="sm">
-            Live Demo <ArrowUpRight className="ml-2 h-4 w-4" />
-          </Button>
-        </Link>
+        {sourceUrl && (
+          <Link href={sourceUrl} target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="sm">
+              <Github className="mr-2 h-4 w-4" /> Source
+            </Button>
+          </Link>
+        )}
+        {liveUrl && liveUrl !== '#' && (
+          <Link href={liveUrl} target="_blank" rel="noopener noreferrer">
+            <Button variant="default" size="sm">
+              Live Demo <ArrowUpRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        )}
       </CardFooter>
     </Card>
   );

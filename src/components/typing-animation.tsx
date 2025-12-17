@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
-const roles = ["Full-Stack Developer", "React Enthusiast", "Node.js Expert", "UI/UX Advocate"];
+const roles = ["Full-Stack Developer", "AI/ML Enthusiast", "React Developer", "Freelancer"];
 
 export default function TypingAnimation() {
   const [text, setText] = useState('');
@@ -25,7 +25,7 @@ export default function TypingAnimation() {
       setTypingSpeed(isDeleting ? 75 : 150);
 
       if (!isDeleting && text === fullText) {
-        setTimeout(() => setIsDeleting(true), 1500);
+        setTimeout(() => setIsDeleting(true), 2000);
       } else if (isDeleting && text === '') {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { socialLinks } from '@/lib/data';
 import { Button } from './ui/button';
-import { ArrowDown, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowDown, Mail, Phone } from 'lucide-react';
 import TypingAnimation from './typing-animation';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -15,26 +15,27 @@ export default function HeroSection() {
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 py-20">
         <div className="lg:w-1/2 text-center lg:text-left">
           <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight">
-            Hi, I&apos;m a <br /> MERN Stack Developer
+            Hi, I&apos;m Aashish Gupta
           </h1>
-          <div className="mt-4 text-lg md:text-xl text-muted-foreground h-8">
+          <div className="mt-4 text-lg md:text-xl text-muted-foreground h-16">
             <TypingAnimation />
           </div>
           <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-base md:text-lg text-muted-foreground">
-            I specialize in building exceptional and accessible digital experiences. Currently, I&apos;m focused on creating responsive full-stack web applications.
+            I specialize in building exceptional and accessible digital experiences. Currently, I&apos;m focused on creating responsive full-stack web applications and exploring AI/ML.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <Link href="#contact" passHref>
               <Button size="lg" className="w-full sm:w-auto">
-                Contact Me
+                <Mail className="mr-2 h-4 w-4" />
+                aashishg8160@gmail.com
               </Button>
             </Link>
-            <Link href="#projects" passHref>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                View My Work
-                <ArrowDown className="ml-2 h-4 w-4" />
+             <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
+                <a href="tel:+918160280943">
+                  <Phone className="mr-2 h-4 w-4" />
+                  +91-8160280943
+                </a>
               </Button>
-            </Link>
           </div>
           <div className="mt-8 flex justify-center lg:justify-start gap-4">
             {socialLinks.map((link) => (

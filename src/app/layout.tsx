@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'MERN Folio',
-  description: 'A modern portfolio for a MERN stack developer.',
+  title: 'Aashish Gupta | Portfolio',
+  description: 'A modern portfolio for a MERN stack developer and AI enthusiast.',
 };
 
 export default function RootLayout({
