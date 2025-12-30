@@ -75,10 +75,6 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5 text-accent" />
                 <span className="group-hover:text-primary transition-colors">aashishg8160@gmail.com</span>
               </a>
-              <a href="tel:+918160280943" className="flex items-center gap-3 group">
-                <Phone className="h-5 w-5 text-accent" />
-                <span className="group-hover:text-primary transition-colors">+91-8160280943</span>
-              </a>
             </div>
             <div className="mt-8 flex gap-4">
               {socialLinks.map((link) => (
