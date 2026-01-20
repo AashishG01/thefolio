@@ -21,9 +21,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased relative">
+      <body className="font-body antialiased relative min-h-screen bg-background bg-grid-white/[0.02]">
         <Header />
-        <main className="flex flex-col items-center px-4">
+        <main className="flex flex-col items-center px-4 pt-20">
           {children}
         </main>
         <Footer />

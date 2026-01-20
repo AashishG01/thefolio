@@ -25,6 +25,7 @@ export type Skill = {
   name: string;
   use: string;
   proofUrl: string;
+  icon: string;
 };
 
 export type Experience = {

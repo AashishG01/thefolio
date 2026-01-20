@@ -36,27 +36,27 @@ export default function HowIWorkSection() {
           <div className="lg:col-span-1 flex justify-center">
             <div className="relative w-72 h-72">
               <Image
-                src="https://images.unsplash.com/photo-1550439062-609e1531270e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXJ8ZW58MHx8fHwxNzYxMzA4NzE3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/imagemyself.png"
                 alt="Aashish Gupta"
                 fill
                 className="rounded-full object-cover shadow-lg border-4 border-background"
-                data-ai-hint="developer portrait"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           </div>
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
             {workProcess.map((item, index) => (
-              <Card key={index} className="bg-background/70 border-2 border-transparent hover:border-accent/50 transition-all">
+              <Card key={index} className="glass-card border-white/5 hover:border-accent/50 transition-all rounded-xl">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <div className="p-2 bg-secondary rounded-full">
+                    <div className="p-2 bg-primary/10 rounded-full">
                       <item.icon className="h-6 w-6 text-accent" />
                     </div>
-                    <CardTitle className="font-headline text-lg">{item.title}</CardTitle>
+                    <CardTitle className="font-headline text-lg text-white">{item.title}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </CardContent>

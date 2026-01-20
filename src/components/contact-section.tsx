@@ -26,7 +26,7 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 export default function ContactSection() {
   const { toast } = useToast();
-  
+
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: { name: '', email: '', message: '' },
@@ -63,23 +63,25 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Column: Info */}
           <div className="flex flex-col justify-center">
-            <h3 className="text-2xl font-bold font-headline text-primary">Aashish Gupta</h3>
-            <p className="mt-2 text-muted-foreground">
+            <h3 className="text-3xl font-bold font-headline text-white mb-2">Aashish Gupta</h3>
+            <p className="text-lg text-accent font-medium mb-6">
               Full-Stack Developer & AI Enthusiast
             </p>
-            <p className="mt-4 text-muted-foreground max-w-md">
+            <p className="text-muted-foreground max-w-md leading-relaxed">
               I'm passionate about building robust web applications and exploring the frontiers of artificial intelligence. I'm currently available for freelance projects and open source collaborations.
             </p>
             <div className="mt-8 space-y-4 text-muted-foreground">
               <a href="mailto:aashishg8160@gmail.com" className="flex items-center gap-3 group">
-                <Mail className="h-5 w-5 text-accent" />
-                <span className="group-hover:text-primary transition-colors">aashishg8160@gmail.com</span>
+                <div className="p-2 rounded-full bg-white/5 group-hover:bg-accent/10 transition-colors">
+                  <Mail className="h-5 w-5 text-accent" />
+                </div>
+                <span className="group-hover:text-white transition-colors">aashishg8160@gmail.com</span>
               </a>
             </div>
             <div className="mt-8 flex gap-4">
               {socialLinks.map((link) => (
                 <Link key={link.name} href={link.url} target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="icon" aria-label={link.name}>
+                  <Button variant="outline" size="icon" aria-label={link.name} className="rounded-full border-white/10 hover:bg-white/10 hover:text-white hover:border-white/20 transition-all">
                     <link.icon className="h-5 w-5" />
                   </Button>
                 </Link>
@@ -88,7 +90,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right Column: Form */}
-          <div className="bg-background/70 p-8 rounded-lg border border-border/50">
+          <div className="glass p-8 rounded-2xl border border-white/10 shadow-2xl">
             <Form {...form}>
               <form onSubmit={handleSubmit(processForm)} className="space-y-6">
                 <FormField
@@ -96,9 +98,9 @@ export default function ContactSection() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel className="text-white">Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your Name" {...field} />
+                        <Input placeholder="Your Name" {...field} className="bg-white/5 border-white/10 text-white placeholder:text-white/20 focus:border-accent/50 focus:ring-accent/20" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -109,9 +111,9 @@ export default function ContactSection() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel className="text-white">Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="your.email@example.com" {...field} />
+                        <Input placeholder="your.email@example.com" {...field} className="bg-white/5 border-white/10 text-white placeholder:text-white/20 focus:border-accent/50 focus:ring-accent/20" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -122,16 +124,16 @@ export default function ContactSection() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel className="text-white">Message</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Your message..." {...field} rows={6} />
+                        <Textarea placeholder="Your message..." {...field} rows={6} className="bg-white/5 border-white/10 text-white placeholder:text-white/20 focus:border-accent/50 focus:ring-accent/20 resize-none" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
                 <div className="text-right">
-                  <Button type="submit" size="lg" disabled={isSubmitting} className="bg-accent text-accent-foreground hover:bg-accent/90">
+                  <Button type="submit" size="lg" disabled={isSubmitting} className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg transition-all py-6 text-lg rounded-xl">
                     Send Message
                   </Button>
                 </div>
