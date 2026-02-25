@@ -29,6 +29,18 @@
       "description": "Screenshot of a background removal tool",
       "imageUrl": "https://storage.googleapis.com/prompt-images/2a733190-3b95-430c-8d14-386f7b11d139.png",
       "imageHint": "background removal"
+    },
+    {
+      "id": "project-5",
+      "description": "AI Customer Support SaaS Platform Dashboard",
+      "imageUrl": "https://images.unsplash.com/photo-1531746790095-e5995e9f3730?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "ai chatbot support"
+    },
+    {
+      "id": "project-6",
+      "description": "Akshar Full-Stack Blogging Platform",
+      "imageUrl": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "blogging writing platform"
     }
   ]
 }

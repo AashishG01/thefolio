@@ -16,6 +16,24 @@ export const socialLinks: SocialLink[] = [
 
 export const projectsData: Project[] = [
   {
+    title: 'AI Customer Support SaaS — Full-Stack AI Platform',
+    description: 'A production-grade multi-tenant SaaS platform enabling businesses to deploy AI chatbots with zero code. Features RAG-powered responses using Gemini 1.5 Flash, PDF knowledge base ingestion, embeddable Shadow DOM chat widget, real-time analytics, and a React admin dashboard — all backed by MongoDB Atlas Vector Search.',
+    tags: ['React', 'Node.js', 'FastAPI', 'Gemini AI', 'MongoDB Atlas', 'RAG', 'LangChain'],
+    imageUrl: '/ai_customer_support_saas.jpg',
+    sourceUrl: 'https://github.com/AashishG01/AI-Customer-Support-SaaS',
+    liveUrl: '#',
+    category: 'Software & Web Development',
+  },
+  {
+    title: 'Akshar — Full-Stack Blogging Platform',
+    description: 'A production-grade blogging platform with Fastify + MongoDB backend and React + TypeScript frontend. Features JWT auth, draft/publish/archive lifecycle, social features (comments, likes, follows), personalized feed, notifications, Swagger API docs, dark/light theme, and Framer Motion animations.',
+    tags: ['React', 'TypeScript', 'Fastify', 'MongoDB', 'JWT', 'Zod', 'Framer Motion'],
+    imageUrl: '/akshar_blogging.jpg',
+    sourceUrl: 'https://github.com/AashishG01/Akshar',
+    liveUrl: '#',
+    category: 'Software & Web Development',
+  },
+  {
     title: 'Synapse-Medicare — AI Healthcare Platform',
     description: 'AI-powered platform to streamline patient–hospital interactions by integrating symptom analysis, hospital dashboards, and appointment scheduling systems. Deployed ML models for disease prediction and chatbot consultation.',
     tags: ['AI/ML', 'LangChain', 'React', 'Node.js', 'MongoDB'],
