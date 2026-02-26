@@ -29,8 +29,8 @@ export const projectsData: Project[] = [
     description: 'A production-grade blogging platform with Fastify + MongoDB backend and React + TypeScript frontend. Features JWT auth, draft/publish/archive lifecycle, social features (comments, likes, follows), personalized feed, notifications, Swagger API docs, dark/light theme, and Framer Motion animations.',
     tags: ['React', 'TypeScript', 'Fastify', 'MongoDB', 'JWT', 'Zod', 'Framer Motion'],
     imageUrl: '/akshar_blogging.jpg',
-    sourceUrl: 'https://github.com/AashishG01/Akshar',
-    liveUrl: '#',
+    sourceUrl: 'https://github.com/AashishG01/akshar_bloggin_platform',
+    liveUrl: 'https://akshar-bloggin-platform.vercel.app/',
     category: 'Software & Web Development',
   },
   {
